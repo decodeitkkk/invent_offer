@@ -16,13 +16,16 @@ function updateTimer() {
     document.getElementById("timer").innerHTML =
         "<div>" +
         d +
-        "&nbsp;:<span>days</span>  </div>" +
+        " :" +
+        "<span>days</span>  </div>" +
         "<div>" +
         h +
-        "&nbsp;:<span>hours</span></div>" +
+        ":" +
+        "<span>hours</span></div>" +
         "<div>" +
         m +
-        "&nbsp;:<span>minutes</span></div>" +
+        ":" +
+        "<span>minutes</span></div>" +
         "<div>" +
         s +
         "<span>seconds</span></div>";
