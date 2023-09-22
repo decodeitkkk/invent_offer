@@ -29,5 +29,45 @@ function updateTimer() {
         "<div>" +
         s +
         "<span>seconds</span></div>";
+    document.getElementById("timer2").innerHTML =
+        "<div>" +
+        d +
+        " : " +
+        "<span></span>  " +
+        "" +
+        h +
+        " : " +
+        "<span></span>" +
+        "" +
+        m +
+        " : " +
+        "<span></span>" +
+        "" +
+        s +
+        "<span></span>";
 }
 setInterval("updateTimer()", 1000);
+
+let ft = document.getElementById("floating_timer");
+window.addEventListener("scroll", () => {
+    if (window.scrollY < 600) {
+        // Adjust the threshold as needed
+        ft.classList.add("show");
+    } else {
+        ft.classList.remove("show");
+    }
+});
+
+ft.addEventListener("click", function scrollToTop() {
+    window.scrollTo({
+        top: 400,
+        behavior: "smooth", // Smooth scrolling animation
+    });
+});
+
+stt = () => {
+    window.scrollTo({
+        top: 400,
+        behavior: "smooth", // Smooth scrolling animation
+    });
+};

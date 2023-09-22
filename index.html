@@ -22,6 +22,30 @@
             color: #fff;
             border-radius: 5px;
         }
+
+        .float {
+            position: fixed;
+            width: 250px;
+            height: 100px;
+            bottom: 40px;
+            right: 40px;
+            background-color: black;
+            color: #FFF;
+            border-radius: 25px;
+            text-align: center;
+            font-size: 24px;
+            box-shadow: 2px 2px 3px #999;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            z-index: 100;
+            cursor: pointer;
+        }
+
+        .show {
+            display: none;
+        }
     </style>
 </head>
 
@@ -31,7 +55,7 @@
         <nav class="navbar navbar-expand-lg" data-bs-theme="dark">
             <div class="container-xl w-100 d-block navcontainer">
                 <div class="row w-100 gx-0 mx-0 justify-content-between align-items-center">
-                    <div class="col-auto col-sm-auto order-1 order-sm-1 order-md-1 order-lg-1 order-xl-1">
+                    <div class="col-auto col-sm-auto order-1 order-sm-1 order-md-1 order-lg-1 order-xl-1 py-2">
                         <a href="https://inventstore.in" title="invent store logo" class="navbar-brand">
 
                             <img class="img-fluid"
@@ -45,22 +69,22 @@
                         <div class="d-none d-md-block d-lg-block Desktop-nav">
                             <div class="collapse navbar-collapse" id="main-navbar">
                                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                                    <li class="nav-item pre-bbok"> <a class="nav-link"
-                                            href="https://inventstore.in/pre-book/">Pre-Book</a></li>
+                                    <!-- <li class="nav-item pre-bbok"> <a class="nav-link"
+                                            href="https://inventstore.in/pre-book/">Pre-Book</a></li> -->
 
-                                    <li class="nav-item"> <a class="nav-link" href="https://stores.inventstore.in"
-                                            target="_blank">Store</a></li>
+                                    <!-- <li class="nav-item"> <a class="nav-link" href="https://stores.inventstore.in"
+                                            target="_blank">Store</a></li> -->
 
-                                    <li class="nav-item dropdown dropdown-mega position-static my-mega">
-                                        <!-- <a class="nav-link dropdown-toggle" href="https://inventstore.in/product-category/iphone/" data-bs-toggle="dropdown" data-bs-auto-close="outside">iPhone</a> -->
+                                    <!-- <li class="nav-item dropdown dropdown-mega position-static my-mega"> -->
+                                    <!-- <a class="nav-link dropdown-toggle" href="https://inventstore.in/product-category/iphone/" data-bs-toggle="dropdown" data-bs-auto-close="outside">iPhone</a> -->
 
-                                        <a class="nav-link dropdown-toggle"
+                                    <!-- <a class="nav-link dropdown-toggle"
                                             onclick="goto_category('https://inventstore.in/product-category/iphone/');"
                                             href="https://inventstore.in/product-category/iphone/"
                                             data-toggle="dropdown" aria-expanded="false">
-                                            iPhone</a>
+                                            iPhone</a> -->
 
-                                        <div class="dropdown-menu">
+                                    <!-- <div class="dropdown-menu">
                                             <div class="mega-content px-4 iPhones-menu">
                                                 <div class="container">
                                                     <ul>
@@ -136,9 +160,9 @@
                                                 </div>
                                             </div>
                                         </div>
-                                    </li>
+                                    </li> -->
 
-                                    <li class="nav-item dropdown dropdown-mega position-static my-mega">
+                                    <!-- <li class="nav-item dropdown dropdown-mega position-static my-mega">
                                         <a class="nav-link dropdown-toggle"
                                             onclick="goto_category('https://inventstore.in/product-category/ipad/');"
                                             href="https://inventstore.in/product-category/ipad/" data-toggle="dropdown"
@@ -209,8 +233,8 @@
                                             </div>
                                         </div>
 
-                                    </li>
-                                    <li class="nav-item dropdown dropdown-mega position-static my-mega MacBook">
+                                    </li> -->
+                                    <!-- <li class="nav-item dropdown dropdown-mega position-static my-mega MacBook">
                                         <a class="nav-link dropdown-toggle"
                                             onclick="goto_category('https://inventstore.in/product-category/mac/');"
                                             href="https://inventstore.in/product-category/mac/" data-toggle="dropdown"
@@ -279,10 +303,10 @@
                                                 </div>
                                             </div>
                                         </div>
-                                    </li>
+                                    </li> -->
 
                                     <!-- <li class="nav-item"> <a class="nav-link" href="#">Watch</a></li> -->
-                                    <li class="nav-item dropdown dropdown-mega position-static my-mega MacBook">
+                                    <!-- <li class="nav-item dropdown dropdown-mega position-static my-mega MacBook">
                                         <a class="nav-link dropdown-toggle"
                                             onclick="goto_category('https://inventstore.in/product-category/watch/');"
                                             href="https://inventstore.in/product-category/watch/" data-toggle="dropdown"
@@ -330,9 +354,9 @@
                                                 </div>
                                             </div>
                                         </div>
-                                    </li>
+                                    </li> -->
 
-                                    <li class="nav-item dropdown dropdown-mega position-static my-mega MacBook">
+                                    <!-- <li class="nav-item dropdown dropdown-mega position-static my-mega MacBook">
                                         <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
                                             data-bs-auto-close="outside">Audio</a>
                                         <div class="dropdown-menu">
@@ -376,12 +400,12 @@
                                                 </div>
                                             </div>
                                         </div>
-                                    </li>
-                                    <li class="nav-item"> <a class="nav-link"
+                                    </li> -->
+                                    <!-- <li class="nav-item"> <a class="nav-link"
                                             href="https://inventstore.in/accessories/">Accessories</a></li>
 
                                     <li class="nav-item"> <a class="nav-link"
-                                            href="https://inventstore.in/order-tracking/">Order Tracking</a></li>
+                                            href="https://inventstore.in/order-tracking/">Order Tracking</a></li> -->
 
                                     <!-- <li class="nav-item"> <a class="nav-link" href="https://inventstore.in/student-offer/">Student Offer</a></li> -->
                                 </ul>
@@ -393,7 +417,7 @@
 
                             <div class="collapse navbar-collapse " id="main-navbar">
                                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                                    <li class="nav-item pre-bbok"> <a class="nav-link"
+                                    <!-- <li class="nav-item pre-bbok"> <a class="nav-link"
                                             href="https://inventstore.in/pre-book/">Pre-Book</a></li>
                                     <li class="nav-item"> <a class="nav-link"
                                             href="https://inventstore.in/store-locator/">Store</a></li>
@@ -614,10 +638,10 @@
                                                 </div>
                                             </div>
                                         </div>
-                                    </li>
+                                    </li> -->
 
                                     <!-- <li class="nav-item"> <a class="nav-link" href="#">Watch</a></li> -->
-                                    <li class="nav-item dropdown dropdown-mega position-static my-mega MacBook"> <a
+                                    <!-- <li class="nav-item dropdown dropdown-mega position-static my-mega MacBook"> <a
                                             class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
                                             data-bs-auto-close="outside">Watch</a>
                                         <div class="dropdown-menu">
@@ -712,7 +736,7 @@
                                     <li class="nav-item"> <a class="nav-link"
                                             href="https://inventstore.in/accessories/">Accessories</a></li>
                                     <li class="nav-item"> <a class="nav-link"
-                                            href="https://inventstore.in/order-tracking/">Order Tracking</a></li>
+                                            href="https://inventstore.in/order-tracking/">Order Tracking</a></li> -->
                                     <!-- <li class="nav-item"> <a class="nav-link" href="https://inventstore.in/student-offer/">Student Offer</a></li> -->
                                 </ul>
                             </div>
@@ -722,10 +746,8 @@
                         <div class="accout-shop-option position-relative">
                             <div class="d-inline-flex align-items-center">
                                 <a href="#" title="Search" class="me-4 search-btn"><i class="fa fa-search"></i></a>
-                                <a href="https://inventstore.in/my-account/" title="User" class="me-4"><i
-                                        class="fa fa-user"></i></a>
-                                <a href="https://inventstore.in/cart/" title="shopping bag" class=""><i
-                                        class="fa fa-shopping-bag"></i><span
+                                <a href="#" title="User" class="me-4"><i class="fa fa-user"></i></a>
+                                <a href="#" title="shopping bag" class=""><i class="fa fa-shopping-bag"></i><span
                                         class="cart-count bg-accent rounded-circle p-1 position-absolute">
                                         <div class="header-cart-count">1</div>
                                     </span></a>
@@ -797,6 +819,8 @@
         </div>
         <!-- /.search-wrapper -->
     </header>
+
+
     <div class="container-fluid" style="background-image: url('./assets/background_banner.jpg'); min-height:350px; background-position: center center; object-fit:contain;
         ">
         <div class=" row">
@@ -832,7 +856,7 @@
                             <h3 class="heading text-center i_h2 mt-5 mb-4"> Get Lucky and Save Big on iPhone 15!
                             </h3>
                             <p class="i_p text-center"> Prepare for the ultimate tech upgrade with our exclusive
-                                "iPhone 15 Lucky Draw." We're giving you the chance to score an amazing 10% discount on
+                                "iPhone 15 Lucky Draw." We're giving you the chance to score an amazing 15% discount on
                                 the latest iPhone 15 models!
 
 
@@ -1144,6 +1168,12 @@
                         </div>
 
                     </div>
+                    <div class="row d-flex justify-content-center ">
+                        <!-- <div class="profeatures-card"> -->
+                        <div class="btn btn-success btn-lg fw-bolder fs-4" onclick="stt()">
+                            Get Chance to win 15% off of iPhone 15</div>
+                        <!-- </div> -->
+                    </div>
                 </div>
             </div>
         </div>
@@ -1190,6 +1220,12 @@
                                         alt="">
                                 </div>
                             </div>
+                        </div>
+                        <div class="row d-flex justify-content-center ">
+                            <!-- <div class="profeatures-card"> -->
+                            <div class="btn btn-success btn-lg fw-bolder fs-4" onclick="stt()">
+                                Get Chance to win 15% off of iPhone 15</div>
+                            <!-- </div> -->
                         </div>
                     </div>
                 </div>
@@ -1272,6 +1308,12 @@
                             </div>
                         </div>
                     </div>
+                    <div class="row d-flex justify-content-center mb-3 ">
+                        <!-- <div class="profeatures-card"> -->
+                        <div class="btn btn-success btn-lg fw-bolder fs-4" onclick="stt()">
+                            Get Chance to win 15% off of iPhone 15</div>
+                        <!-- </div> -->
+                    </div>
                     <div class="profeatures-card p18 li18 text-center px-4 py-3 pb-4 h-100 mb-4">
                         <div class="row gx-5">
                             <div class="col-sm-7 text-start px-sm-5 pt-5">
@@ -1324,7 +1366,7 @@
                                 src="https://inventstore.in/wp-content/uploads/2023/06/logo-invent.webp" alt="">
                         </a>
                     </div>
-                    <div class="col-md-auto py-4 d-sm-flex align-items-center newsletter-block">
+                    <!-- <div class="col-md-auto py-4 d-sm-flex align-items-center newsletter-block">
                         <h5 class="mb-3 mb-sm-0 text-white d-inline-block me-3 lh100">Newsletter Subscription</h5>
                         <div class="input-group">
 
@@ -1332,14 +1374,14 @@
                                 aria-label="Your email ID" aria-describedby="subscribebtn">
                             <button class="btn btn-light" type="button" id="subscribebtn">Subscribe</button>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
-            <hr class="border-secondary border-secondary mb-md-4 mb-0">
+            <!-- <hr class="border-secondary border-secondary mb-md-4 mb-0"> -->
             <!-- /.footer-top -->
             <div class="footer-links-section">
                 <div class="row gx-lg-5">
-                    <div class="col-sm-12 col-md-6">
+                    <!-- <div class="col-sm-12 col-md-6">
                         <div class="footer-links pt-4 pb-0 pb-sm-4">
                             <h6 class="collapse-heading text-white mb-4">Shop <span class="collapse-icon"><i
                                         class="fa fa-plus"></i></span></h6>
@@ -1380,9 +1422,9 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                     <!-- ##################################### -->
-                    <div class="col-sm-12 col-md-3">
+                    <!-- <div class="col-sm-12 col-md-3">
                         <div class="footer-links pt-4 pb-0 pb-sm-4">
                             <h6 class="collapse-heading text-white mb-4">Company <span class="collapse-icon"><i
                                         class="fa fa-plus"></i></span></h6>
@@ -1406,9 +1448,9 @@
                                         href="https://inventstore.in/contact/">Contact</a></li>
                             </ul>
                         </div>
-                    </div>
+                    </div> -->
                     <!-- ##################################### -->
-                    <div class="col-sm-12 col-md-3">
+                    <!-- <div class="col-sm-12 col-md-3">
                         <div class="footer-links pt-4 pb-0 pb-sm-4">
                             <h6 class="collapse-heading text-white mb-4">Important Links <span class="collapse-icon"><i
                                         class="fa fa-plus"></i></span></h6>
@@ -1434,7 +1476,7 @@
                                         &amp; Conditions</a></li>
                             </ul>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
             <!-- /.footer-links-section -->
@@ -1447,15 +1489,11 @@
                     <div class="col-sm-auto py-3">
                         <div class="social-handles d-flex align-items-center">
                             <h6 class="mb-0 me-3 text-white d-inline-block">Follow us on</h6>
-                            <a href="https://www.facebook.com/p3sventures/" title="facebook" target="_blank"><i
-                                    class="fab fa-facebook"></i></a>
+                            <a href="#" title="facebook" target="_blank"><i class="fab fa-facebook"></i></a>
 
-                            <a href="https://www.instagram.com/invent_apple_premium_reseller/" title="instagram"
-                                target="_blank"><i class="fab fa-instagram"></i></a>
-                            <a href="https://www.linkedin.com/company/inventapple/mycompany/" title="linkedin"
-                                target="_blank"><i class="fab fa-linkedin"></i></a>
-                            <a href="https://www.youtube.com/channel/UCI7g59kDTamOAw5xtZyvcKg/videos" title="youtube"
-                                target="_blank"><i class="fab fa-youtube"></i></a>
+                            <a href="#" title="instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+                            <a href="#" title="linkedin" target="_blank"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" title="youtube" target="_blank"><i class="fab fa-youtube"></i></a>
                         </div>
                     </div>
                 </div>
@@ -1463,6 +1501,10 @@
             <!-- /.footer-copyright -->
         </div>
     </footer>
+    <div id="floating_timer" class="float ">
+        <div>Offer Ends in</div>
+        <div id="timer2"></div>
+    </div>
 
 
     <script src="js/script.js"></script>

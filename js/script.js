@@ -51,7 +51,7 @@ function showToast(e) {
         // link.href = "https://inventstore.in/product/apple-iphone-15/"; // Replace with your desired URL
         link.textContent = "Click here to visit Example.com";
         Toastify({
-            text: "Claim your 10% off on brand new iPhone 15 here",
+            text: "Claim your 15% off on brand new iPhone 15 here",
             duration: 5000, // Duration in milliseconds (3 seconds)
             newWindow: true, // Open in a new window/tab
             close: true, // Show a close button to close the toast manually
@@ -60,7 +60,7 @@ function showToast(e) {
             backgroundColor: "#007bff", // Background color
             stopOnFocus: true, // Stop the timer when the toast is focused
             onClick: function () {
-                window.location.replace("http://www.w3schools.com");
+                window.location.replace("https://inventstore.in/");
             }, // Callback after click
         }).showToast();
     }
